@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Test</title>
+</head>
+
+<body>
+    <h1 class="align">Number Facts</h1>
+    <div class="grid-container">
+        <div class="card first">
+            <h1>Maths Facts</h1>
+            <p>Enter a number to know a Mathematical Fact</p>
+            <input type="number" id="math">
+            <button onclick=fetchMathFacts()>Submit</button>
+            <p id="mathFacts" class="result"></p>
+        </div>
+        <div class="card second">
+            <h1>Number Trivia</h1>
+            <p>Enter a number to know a Interesting Fact</p>
+            <input type="number" id="trivia">
+            <button onclick=fetchTriviaFacts()>Submit</button>
+            <p id="triviaFacts" class="result"></p>
+        </div>
+        <div class="card first">
+            <h1>Date Facts</h1>
+            <p>Enter a date to know a Fact about it</p>
+            <input type="number" id="month"> / <input type="number" id="date">
+            <button onclick=fetchDateFacts()>Submit</button>
+            <p id="dateFacts" class="result"></p>
+        </div>
+        <div class="card second">
+            <h1>Year Facts</h1>
+            <p>Enter a year to know a Fact about it</p>
+            <input type="number" id="year">
+            <button onclick=fetchYearFacts()>Submit</button>
+            <p id="yearFacts" class="result"></p>
+        </div>
+    </div>
+</body>
+
+</html>
