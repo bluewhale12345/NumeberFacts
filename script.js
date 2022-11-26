@@ -37,3 +37,28 @@ const fetchYearFacts = async () =>{
     const data = await resposne.text();
     yearFacts.innerHTML = data;
 }
+
+const  fetchRandomMathsFacts = async () =>{
+    const resposne = await fetch(`http://numbersapi.com/random/math`);
+    const data = await resposne.text();
+    mathFacts.innerHTML = data;
+}
+
+const  fetchRandomTraviaFacts = async () =>{
+    const resposne = await fetch(`http://numbersapi.com/random/trivia`);
+    const data = await resposne.text();
+    triviaFacts.innerHTML = data;
+} 
+
+const fetchRandomDateFacts = async () =>{
+    const resposne = await fetch(`http://numbersapi.com/random/date`);
+    const data = await resposne.text();
+    dateFacts.innerHTML = data;
+}
+
+const fetchRandomYearFacts = async () =>{
+    const resposne = await fetch(`http://numbersapi.com/random/year`);
+    const data = await resposne.text();
+    yearFacts.innerHTML = data;
+}
+
